@@ -1,6 +1,7 @@
 # AI Agentic Insights 
 Blog series repo
 
+
 Main steps to add a blog:
 
 1. Create the new repo for downloading the solution
