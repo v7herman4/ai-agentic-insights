@@ -78,3 +78,13 @@ Say goodbye to the “data elite.” With the Azure Databricks Genie Agent, **an
 ✅ No tickets  
 ✅ No SQL  
 ✅ Just… answers
+
+
+
+👥 About the Authors
+Melissa Lacefield is a Principal Cloud Solution Architect at Microsoft, leading global digital transformation through enterprise-scale AI and data solutions on Azure. With a Ph.D. in Cybersecurity and advanced degrees in MIS, she brings deep technical expertise in AI-driven security and intelligent cloud architecture. Melissa designs complex, cost-optimized solutions that solve critical business challenges and enhance operational resilience. Her work empowers organizations to modernize securely, unlock data-driven insights, and drive measurable impact through AI.
+Valter Herman is a Senior Technical Specialist at Microsoft, focused on Power Automate, AI, and guiding teams through licensing and integration puzzles. He’s a hands-on problem-solver with a passion for building smart, scalable workflows in tools like Copilot Studio and Azure AI Foundry.
+
+
+To everyone who contributed ideas, feedback, or encouragement—thank you. This solution is stronger because of you.
+ Special thanks to Josh Hays& Johnny Harbieh.
