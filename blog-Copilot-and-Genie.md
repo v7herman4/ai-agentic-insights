@@ -79,6 +79,8 @@ Say goodbye to the “data elite.” With the Azure Databricks Genie Agent, **an
 ✅ No SQL  
 ✅ Just… answers
 
+**📣 Accelerate to a Solution **
+Download the Copilot Studio Solution and steps to start today:
 
 
 👥 About the Authors
