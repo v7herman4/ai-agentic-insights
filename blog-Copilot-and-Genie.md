@@ -81,7 +81,7 @@ Say goodbye to the “data elite.” With the Azure Databricks Genie Agent, **an
 
 **📣 Accelerate to a Solution **
 Download the Copilot Studio Solution and steps to start today:
-
+GitHub Solution: [Download](https://github.com/v7herman4/Copilot-and-Genie)
 
 👥 About the Authors
 Melissa Lacefield is a Principal Cloud Solution Architect at Microsoft, leading global digital transformation through enterprise-scale AI and data solutions on Azure. With a Ph.D. in Cybersecurity and advanced degrees in MIS, she brings deep technical expertise in AI-driven security and intelligent cloud architecture. Melissa designs complex, cost-optimized solutions that solve critical business challenges and enhance operational resilience. Her work empowers organizations to modernize securely, unlock data-driven insights, and drive measurable impact through AI.
