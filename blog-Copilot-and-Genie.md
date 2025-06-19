@@ -80,7 +80,9 @@ Say goodbye to the “data elite.” With the Azure Databricks Genie Agent, **an
 ✅ Just… answers
 
 **📣 Accelerate to a Solution **
+
 Download the Copilot Studio Solution and steps to start today:
+
 GitHub Solution: [Download](https://github.com/v7herman4/Copilot-and-Genie)
 
 👥 About the Authors
