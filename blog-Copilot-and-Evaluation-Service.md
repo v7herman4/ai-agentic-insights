@@ -1,45 +1,62 @@
-## Overview
+# Closing the Loop: Evaluating Copilot Studio Agents with Azure AI Observability
 
-In order to trust that the Agent you built is performing as expected in “the wild”, you must evaluate its conversations consistently. With the Azure AI Foundry Evaluation Service (Evaluation Service) you can monitor your agent created with Copilot Studio.
+In today’s fast-evolving world of generative AI, agent creation has never been easier—or more popular. With tools like Copilot Studio, business users and developers alike are spinning up AI-powered agents to automate tasks, answer customer questions, and drive productivity. But with great power comes great responsibility—and increasingly, our customers are asking an important question:
 
-To understand more about the concept of Evaluation in generative AI, note the following article:
+> **“How do we know these agents are performing well and safely?”**
 
-[Observability in Generative AI with Azure AI Foundry - Azure AI Foundry | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/observability)
+This is where **observability** and **evaluation** enter the picture.
 
-Note that not all capabilities in the Observability features of Azure AI Foundry are made available through this solution.<br><br><br>
+## Why Observability Matters for AI Agents
 
+As outlined in [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/observability), observability isn’t just for DevOps pipelines—it’s essential for AI systems. It’s the process of collecting, analyzing, and acting on signals from your AI applications to ensure they’re reliable, safe, and aligned with business goals.
 
-The Evaluation Service provides an API endpoint with which a workload can programmatically interact to retrieve evaluations based on agent conversations. This “Copilot Studio and Azure Evaluation Service” solution combines the power of low-code agents with the availability of pro-code Azure services to achieve enterprise-strength evaluations for your agent created in Copilot Studios. Low-code workflows run in the background to scour records created in the ConversationTranscript table created in Dataverse. The conversations in this table are sent to the Evaluation Service which returns values and reasons that are stored in a custom Dataverse table.
+Without observability, hallucinations or off-topic responses may go unnoticed until they cause customer frustration—or worse.
 
-The following **quality** evaluators are returned from the service:
+In fact, Microsoft recommends that AI solutions follow **continuous monitoring and evaluation** practices. This includes capturing runtime metrics, logging interactions, and continuously evaluating those interactions against key criteria. You can learn more about this approach [here](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/monitor-applications) and [here](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/continuous-evaluation-agents).
 
-\-          Relevance
+## Introducing My Solution: Copilot Studio + Azure AI Observability
 
-\-          Fluency
+To address this need, I built a solution that connects Copilot Studio agents with Azure AI Observability and Evaluation services. Here’s how it works:
 
-\-          Intent Resolution
+1. **Conversation Capture**  
+Every conversation with your Copilot Studio agent is automatically stored in Dataverse tables (standard functionality).
 
-\-          Coherence
+2. **Evaluation Pipeline**  
+My solution extracts these conversations and sends them to **Azure AI Observability** via the **Evaluation API**.
 
-\-          Task Adherence
+3. **Evaluation & Insights**  
+The Azure AI Evaluation Service analyzes the conversations using various **evaluators**, including:
+- **General Purpose Evaluators**: For relevance, fluency, and coherence ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators))
+- **Risk & Safety Evaluators**: For harmful content, bias, and security issues ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators))
 
-\-          Tool Call Accuracy
+4. **Dataverse Reporting (Out-of-the-Box)**  
+Once the evaluations are complete, the results are automatically stored back into Dataverse. To make it even easier to analyze the data, this solution includes **pre-built Power BI reports** that work right out of the box.
 
-For more information on these **quality** evaluators, note the following article:
+These reports allow you to:
+- Track key metrics like Relevance, Fluency, Coherence, and Safety
+- Filter results by time period, agent, or evaluator type
+- Drill into individual conversations for detailed review
 
-[General purpose evaluators for generative AI - Azure AI Foundry | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators)
-<br><br>
+No need to start from scratch—simply import the provided Power BI reports following [these steps](https://github.com/v7herman4/copilotstudio-and-azure-evaluation-service/blob/main/documentation/howtousereporting.md), and you’ll have instant visibility into your agents’ performance and risk areas.
 
-Additionally, the service provides values and reasons for the following **risk** evaluators:
+In other words:  
+➡️ **Extract Copilot Studio conversations → Evaluate in Azure → Visualize in Dataverse (with reporting ready to go).**
 
-\-          Hate Unfairness
+## Why This Matters
 
-\-          Code Vulnerability
+This approach unlocks **continuous improvement** for your Copilot Studio agents:
+- Detect hallucinations and harmful responses early
+- Identify areas where your agents need refinement
+- Monitor long-term performance trends
+- Keep humans in the loop for critical evaluations
 
-\-          Indirect Attack
+It also aligns perfectly with Microsoft’s [AI principles](https://www.microsoft.com/ai/responsible-ai) around safety, transparency, and accountability.
 
-\-          Sexual
+## Get Started
 
-\-          Self Harm
+The full solution is open-source and available [here on GitHub](https://github.com/v7herman4/copilotstudio-and-azure-evaluation-service). You’ll find:
+- Power Platform solution files
+- Azure Function for evaluation integration
+- Setup instructions for connecting to your environment
 
-\-          Violence
+Whether you’re a seasoned AI developer or just beginning your Copilot Studio journey, this project will help you create **better, safer, and more accountable agents**.
