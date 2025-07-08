@@ -65,8 +65,8 @@ Whether you’re a seasoned AI developer or just beginning your Copilot Studio j
 
 ## Contributors
 Many people contributed to this solution! A big thanks to the team for their efforts.
-- [@v7herman4](https://github.com/v7herman4)
 - [@melilace](https://github.com/melilace)
 - [@stevenpon](https://github.com/stevepon)
 - [@thecsw](https://github.com/thecsw)
 - David Amble
+- [@v7herman4](https://github.com/v7herman4)
