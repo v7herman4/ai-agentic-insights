@@ -62,3 +62,11 @@ The full solution is open-source and available [here on GitHub](https://github.c
 - Directions on how to use the solution
 
 Whether you’re a seasoned AI developer or just beginning your Copilot Studio journey, this project will help you create **better, safer, and more accountable agents**.
+
+## Contributors
+Many people contributed to this solution! A big thanks to the team for their efforts.
+- [@v7herman4](https://github.com/v7herman4)
+- [@melilace](https://github.com/melilace)
+- [@stevenpon](https://github.com/stevepon)
+- [@thecsw](https://github.com/thecsw)
+- David Amble
