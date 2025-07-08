@@ -14,22 +14,22 @@ Without observability, hallucinations or off-topic responses may go unnoticed un
 
 In fact, Microsoft recommends that AI solutions follow **continuous monitoring and evaluation** practices. This includes capturing runtime metrics, logging interactions, and continuously evaluating those interactions against key criteria. You can learn more about this approach [here](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/monitor-applications) and [here](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/continuous-evaluation-agents).
 
-## Introducing My Solution: Copilot Studio + Azure AI Observability
+## Introducing Our Solution: Copilot Studio + Azure AI Observability
 
-To address this need, I built a solution that connects Copilot Studio agents with Azure AI Observability and Evaluation services. Here’s how it works:
+To address this need, we built a solution that connects Copilot Studio agents with Azure AI Observability and Evaluation services. Here’s how it works:
 
 1. **Conversation Capture**  
 Every conversation with your Copilot Studio agent is automatically stored in Dataverse tables (standard functionality).
 
 2. **Evaluation Pipeline**  
-My solution extracts these conversations and sends them to **Azure AI Observability** via the **Evaluation API**.
+The solution extracts these conversations and sends them to **Azure AI Observability** via the **Evaluation API**.
 
 3. **Evaluation & Insights**  
 The Azure AI Evaluation Service analyzes the conversations using various **evaluators**, including:
 - **General Purpose Evaluators**: For relevance, fluency, and coherence ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators))
 - **Risk & Safety Evaluators**: For harmful content, bias, and security issues ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators))
 
-4. **Dataverse Reporting (Out-of-the-Box)**  
+4. ** Reporting with Power BI and Dataverse (Out-of-the-Box)**  
 Once the evaluations are complete, the results are automatically stored back into Dataverse. To make it even easier to analyze the data, this solution includes **pre-built Power BI reports** that work right out of the box.
 
 These reports allow you to:
@@ -40,7 +40,7 @@ These reports allow you to:
 No need to start from scratch—simply import the provided Power BI reports following [these steps](https://github.com/v7herman4/copilotstudio-and-azure-evaluation-service/blob/main/documentation/howtousereporting.md), and you’ll have instant visibility into your agents’ performance and risk areas.
 
 In other words:  
-➡️ **Extract Copilot Studio conversations → Evaluate in Azure → Visualize in Dataverse (with reporting ready to go).**
+➡️ **Extract Copilot Studio conversations → Evaluate in Azure → Visualize in Power BI.**
 
 ## Why This Matters
 
@@ -56,7 +56,9 @@ It also aligns perfectly with Microsoft’s [AI principles](https://www.microsof
 
 The full solution is open-source and available [here on GitHub](https://github.com/v7herman4/copilotstudio-and-azure-evaluation-service). You’ll find:
 - Power Platform solution files
-- Azure Function for evaluation integration
-- Setup instructions for connecting to your environment
+- Custom Connector exposing Azure AI Foundry services to the solution 
+- Power BI report available for download and customization
+- Set up instructions from end-to-end
+- Directions on how to use the solution
 
 Whether you’re a seasoned AI developer or just beginning your Copilot Studio journey, this project will help you create **better, safer, and more accountable agents**.
