@@ -26,8 +26,8 @@ The solution extracts these conversations and sends them to **Azure AI Observabi
 
 3. **Evaluation & Insights**  
 The Azure AI Evaluation Service analyzes the conversations using various **evaluators**, including:
-- **General Purpose Evaluators**: For relevance, fluency, and coherence ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators))
-- **Risk & Safety Evaluators**: For harmful content, bias, and security issues ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators))
+ - **General Purpose Evaluators**: For relevance, fluency, and coherence ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators))
+ - **Risk & Safety Evaluators**: For harmful content, bias, and security issues ([details](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators))
 
 4. ** Reporting with Power BI and Dataverse (Out-of-the-Box)**  
 Once the evaluations are complete, the results are automatically stored back into Dataverse. To make it even easier to analyze the data, this solution includes **pre-built Power BI reports** that work right out of the box.
